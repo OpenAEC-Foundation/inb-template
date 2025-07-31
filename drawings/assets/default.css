@@ -370,6 +370,7 @@ text.GRID, tspan.GRID { /* 2.5mm */ font-size: 4.13px; font-weight: bold; }
 text.italic, tspan.italic {font-style: italic;}
 text.bold, tspan.bold {font-weight: bold;}
 text.DIMENSION, tspan.DIMENSION { /* 2.5mm */ font-size: 4.13px; }
+text.DIMENSION.dim13, tspan.DIMENSION.dim13 { /* 2.5mm */ font-size: 4.13px; }
 .material-blank { fill: white; stroke: none; }
 .material-diagonal_1 { fill: url(#diagonal_1); }
 .material-diagonal_2 { fill: url(#diagonal_2); }

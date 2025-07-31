@@ -581,8 +581,8 @@ from pandas_ods_reader import read_ods # type: ignore
 import os
 import sys
 
-basepath = "C:/Users/Gebruiker/Documents/GitHub/INB-Template/drawings/assets/"
-basepath_library = "C:/Users/Gebruiker/Documents/GitHub/INB-Template/02_scripts/"
+basepath = "C:/Users/Dell Precision/Documents/GitHub/INB-Template/drawings/assets/"
+basepath_library = "C:/Users/Dell Precision/Documents/GitHub/INB-Template/02_scripts/"
 
 
 

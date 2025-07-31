@@ -27,7 +27,6 @@ text, tspan { /* 2.5mm */ fill: black; stroke: none; font-family: 'OpenGost Type
 .IfcAnnotation { fill: none; stroke: black; stroke-linecap: round; stroke-width: 0.25; }
 .IfcGeographicElement { fill: none; stroke: black; stroke-linecap: round; stroke-width: 1; }
 .PredefinedType-LINEWORK { stroke: black; stroke-width: 0.25; }
-.PredefinedType-LINEWORK.dashed { stroke-dasharray: 3, 2; }
 .PredefinedType-LINEWORK.fine { stroke-width: 0.18; stroke: #777777; }
 .PredefinedType-LINEWORK.thin { stroke-width: 0.25; }
 .PredefinedType-LINEWORK.medium { stroke-width: 0.35; }
@@ -71,7 +70,6 @@ text, tspan { /* 2.5mm */ fill: black; stroke: none; font-family: 'OpenGost Type
 .PredefinedType-LINEWORK.lineweight_0_70 { stroke-width: 0.7; }
 .PredefinedType-LINEWORK.lineweight_1_00 { stroke-width: 1.0; }
 .PredefinedType-LINEWORK.lineweight_1_40 { stroke-width: 1.4; }
-.PredefinedType-LINEWORK.breakline { stroke:#696969; stroke-width: 0.75; stroke-dasharray: 8, 3, 4, 3; }
 .PredefinedType-LINEWORK.grey { stroke:#808080; }
 .PredefinedType-LINEWORK.black { stroke:black; }
 .PredefinedType-LINEWORK.green { stroke:green; }
@@ -97,12 +95,12 @@ text, tspan { /* 2.5mm */ fill: black; stroke: none; font-family: 'OpenGost Type
 .PredefinedType-LINEWORK.section { marker-start: url(#section-marker); marker-end: url(#section-marker); stroke:black; stroke-width: 0.2; }
 .PredefinedType-LINEWORK.vloeroverspanning { stroke:black; marker-start: url(#vloeroverspanning-marker); marker-end: url(#vloeroverspanning-marker); stroke-width: 0.2; }
 .PredefinedType-LINEWORK.arrow { stroke-width: 0.25; marker-start: url(#arrow-marker-start); marker-end: url(#arrow-marker-end); }
-.PredefinedType-FILLAREA.green { fill:green; stroke:none; }
-.PredefinedType-FILLAREA.blue { fill:blue; stroke:none; }
-.PredefinedType-FILLAREA.yellow { fill:yellow; stroke:none; }
-.PredefinedType-FILLAREA.red { fill:red; stroke:none; }
-.PredefinedType-FILLAREA.purple { fill:purple; stroke:none; }
-.PredefinedType-FILLAREA.darkgrey { fill:#696969; stroke:none; }
+.PredefinedType-FILLAREA.green { fill:green; }
+.PredefinedType-FILLAREA.blue { fill:blue; }
+.PredefinedType-FILLAREA.yellow { fill:yellow; }
+.PredefinedType-FILLAREA.red { fill:red; }
+.PredefinedType-FILLAREA.purple { fill:purple;  }
+.PredefinedType-FILLAREA.darkgrey { fill:#696969; }
 .PredefinedType-FILLAREA.sand { fill: url(#sand); }
 .PredefinedType-FILLAREA.earth { fill: url(#earth); }
 .PredefinedType-FILLAREA.glass { fill: url(#glass); }
@@ -115,9 +113,31 @@ text, tspan { /* 2.5mm */ fill: black; stroke: none; font-family: 'OpenGost Type
 .PredefinedType-FILLAREA.white_25 { fill: white; opacity: 0.25; stroke: none; }
 .PredefinedType-FILLAREA.white_50 { fill: white; opacity: 0.5; stroke: none; }
 .PredefinedType-FILLAREA.white_75 { fill: white; opacity: 0.75; stroke: none; }
-.PredefinedType-FILLAREA.black_10 { fill: black; opacity: 0.10; stroke: black; stroke-width: 0.5; }
+.PredefinedType-FILLAREA.black_10 { fill: black; opacity: 0.10; stroke: none }
 .PredefinedType-FILLAREA.black_25 { fill: black; opacity: 0.25; stroke: none; }
-.PredefinedType-FILLAREA.bestaand_gebouw { fill: url( #bestaand_gebouw); stroke: black; }
+.PredefinedType-FILLAREA.none { stroke:none; }
+.PredefinedType-FILLAREA.continuous { stroke-dasharray: 10, 0; }
+.PredefinedType-FILLAREA.dashed { stroke-dasharray: 6, 3; }
+.PredefinedType-FILLAREA.hidden { stroke-dasharray: 9, 3; }
+.PredefinedType-FILLAREA.center { stroke-dasharray: 12, 3, 3, 3; }
+.PredefinedType-FILLAREA.phantom { stroke-dasharray: 12, 3, 3, 3, 3, 3; }
+.PredefinedType-FILLAREA.dot { stroke-dasharray: 1, 3; }
+.PredefinedType-FILLAREA.dashdot { stroke-dasharray: 6, 3, 1, 3; }
+.PredefinedType-FILLAREA.border { stroke-dasharray: 15, 3, 3, 3; }
+.PredefinedType-FILLAREA.divide { stroke-dasharray: 12, 3, 3, 3; }
+.PredefinedType-FILLAREA.lineweight_0_13 { stroke-width: 0.13; }
+.PredefinedType-FILLAREA.lineweight_0_18 { stroke-width: 0.18; }
+.PredefinedType-FILLAREA.lineweight_0_25 { stroke-width: 0.25; }
+.PredefinedType-FILLAREA.lineweight_0_35 { stroke-width: 0.35; }
+.PredefinedType-FILLAREA.lineweight_0_50 { stroke-width: 0.5; }
+.PredefinedType-FILLAREA.lineweight_0_70 { stroke-width: 0.7; }
+.PredefinedType-FILLAREA.lineweight_1_00 { stroke-width: 1.0; }
+.PredefinedType-FILLAREA.lineweight_1_40 { stroke-width: 1.4; }
+.PredefinedType-FILLAREA.bestaand_gebouw { fill: url( #bestaand_gebouw); }
+.PredefinedType-FILLAREA.verticaal_breed { fill: url( #verticaal_breed); }
+.PredefinedType-FILLAREA.verticaal_smal { fill: url( #verticaal_smal); }
+.PredefinedType-FILLAREA.horizontaal_breed { fill: url( #horizontaal_breed); }
+.PredefinedType-FILLAREA.horizontaal_smal { fill: url( #horizontaal_smal); }
 .PredefinedType-FILLAREA.NEN47_1_metselwerk_baksteen{ fill: url(  #NEN47_1_metselwerk_baksteen_100); }
 .PredefinedType-FILLAREA.NEN47_2_speciale_steenachtige_materialen{ fill: url(  #NEN47_2_speciale_steenachtige_materialen_100); }
 .PredefinedType-FILLAREA.NEN47_3_metselwerk_niet_gebakken_kunststeen{ fill: url(  #NEN47_3_metselwerk_niet_gebakken_kunststeen_100); }
@@ -519,6 +539,9 @@ text.DIMENSION, tspan.DIMENSION { /* 2.5mm */ font-size: 4.13px; }
 	<g id="section-arrow">
         <path style="fill: black;" d="M -3 0 L 0 -4 L 3 0" />
     </g>
+    <g id="detail-arrow" transform="translate(0, -18)">
+        <path style="fill: none;" d="M-11 0-7 2V0M-11 0-7-2V0H0V18" />
+    </g>
     <g id="setout-tag">
         <circle fill="white" stroke="black" r="2.5" style="stroke-width: 0.5" />
         <path d="M 0 0 L -2.5 0 A 2.5 2.5 0 0 1 0 -2.5 Z" fill="black" />
@@ -539,7 +562,7 @@ text.DIMENSION, tspan.DIMENSION { /* 2.5mm */ font-size: 4.13px; }
         <path style="fill: white; stroke: black; stroke-width: 0.5;" d="M -2,-2 2,2 M -2,2 2,-2" />
     </g>
 	<g id="dot">
-        <circle r="2" fill="none" stroke="black" style="stroke-width: 0.25;" />
+        <circle r="0.75" fill="none" stroke="black" style="stroke-width: 0.25;" />
     </g>
 	<g id="g10" transform="translate(-5.5, 2.6) scale(-0.01, 0.01) rotate(180)">
       <path d="M 0,0 V 526.43 H 1133.86 V 0 H 0" style="fill:#00a650;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path12" />
@@ -553,6 +576,9 @@ text.DIMENSION, tspan.DIMENSION { /* 2.5mm */ font-size: 4.13px; }
 		 <path style="fill:#000000;stroke:#000000;stroke-width:4;stroke-dasharray:none;stroke-opacity:1" d="m 120.33277,194.67023 -0.82226,-82.55962 z" id="path1-0" />
 		 <path style="fill:#000000;stroke:#000000;stroke-width:4;stroke-dasharray:none;stroke-opacity:1" d="M 149.37487,182.53334 90.540869,124.60812 Z" id="path1-8-0" />
 		 <circle style="fill:none;stroke:#000000;stroke-width:4;stroke-dasharray:none;stroke-opacity:1" id="path2" cx="119.9063" cy="153.38069" r="41.450706" />
+	</g>
+    <g id="c2" transform="translate(0,0)">
+		<circle style="fill:white;stroke:black;stroke-width:0.25;stroke-dasharray:none;stroke-opacity:1" id="path2" cx="0" cy="0" r="5" />
 	</g>
     <g id="hwa" transform=" translate(-7.15,-9.1) scale(0.06)">
 	<path style="fill:#000000;stroke:#000000;stroke-width:4;stroke-dasharray:none;stroke-opacity:1" d="M 78.469755,152.87286 H 161.03347 Z" id="path1" />
@@ -579,10 +605,22 @@ text.DIMENSION, tspan.DIMENSION { /* 2.5mm */ font-size: 4.13px; }
 	 <g id="kol_bov_ond" transform="translate(0, 1.25) scale(1.5)">
 		<path d="M8 0H0L-3-6" style="fill:none;stroke:#000000; stroke-width:0.15;" id="path1" />
 	 </g>
-	 <g id="kol_ond" transform="translate(0, -1.25) scale(1.5)">
+	 <g id="kol_ond" transform="translate(0, -3.25) scale(1.5)">
 		<path d="M8 0H0L-3 6" style="fill:none;stroke:#000000; stroke-width:0.15;" id="path1" />
 	 </g>
-	  <g id="kol_ond_ond" transform="translate(0, -3.25) scale(1.5)">
+     <g id="kol_ond_ond" transform="translate(0, -3.25) scale(1.5)">
+		<path d="M8 0H0L-3-6" style="fill:none;stroke:#000000; stroke-width:0.15;" id="path1" />
+	 </g>
+     <g id="kol_bov_50" transform="translate(0, 1.25) scale(1.5)">
+		<path d="M 10 0 H 0 L -6.7 12.4" style="fill:none;stroke:#000000; stroke-width:0.15;" id="path1" />
+	 </g>
+	 <g id="kol_bov_ond_50" transform="translate(0, 0.25) scale(1.5)">
+		<path d="M10 0H0L-4.5 9" style="fill:none;stroke:#000000; stroke-width:0.15;" id="path1" />
+	 </g>
+	 <g id="kol_ond_50" transform="translate(0, -4.25) scale(1.5)">
+		<path d="M 10 0 H 0 L -6.7 12.4" style="fill:none;stroke:#000000; stroke-width:0.15;" id="path1" />
+	 </g>
+	<g id="kol_ond_ond_50" transform="translate(0, -6.25) scale(1.5)">
 		<path d="M8 0H0L-3-6" style="fill:none;stroke:#000000; stroke-width:0.15;" id="path1" />
 	 </g>
 	 <g id="pn_1_8">
@@ -753,6 +791,21 @@ text.DIMENSION, tspan.DIMENSION { /* 2.5mm */ font-size: 4.13px; }
 <pattern id="concrete" width="10" height="10" patternUnits="userSpaceOnUse">
     <path style="fill: white;" d="M 0 0 10 0 10 10 0 10" />
 <path style="stroke:#000000;stroke-width:0.25;stroke-linecap:round" d="M.5.5H.8L.65.9zm1.2 3.7.692-.186-.149.611zm.4 3.2.56.203-.25.6zm1.5-5.3.6-.4-.3.5zm3.2-.3.35.25-.439.594zm.4 7.5.3-.2-.15.4zm1.7-5.6.25.4-.1-.3zm.2 2.8.4.2-.2.3zM.8 2.1l.1.1m.4 4.4.05-.05M2.7 3.4l.1.1m.4 1.7.1-.1m1.6-3.6.05.05M3.732.589 3.628.678M5.5 7.1l.1.1m.5-2.7.1-.1m1.2-2.1.05.05M8.3 8.4l.1.1m1.2 1.2.05-.05M.4 4.9.5 5m1-2.2.1-.1m.6 3 .1.1m1.5 1.5.1-.1m.8-4 .1.1m.3 3.1.05-.05M6.9 8.2l.1.1m.5-6.4.05-.05M8.7 4.3l.1.1m.4 1.8.1-.1M.3.2.4.3m.8 8.8.1-.1m1-7.2.1.1m.7 5.9.1-.1m.9-5.3.1.1m1.2 5.8.1-.1m-1.366.788.06.149M6.6.7l.1.1m1.2 4.7.1-.1m.6-2.8.1.1m.7 4.5.1-.1" />
+</pattern>
+<pattern id="verticaal_smal" width="2" height="2" patternUnits="userSpaceOnUse">
+    <path style="fill: white;" d="M 0 0 2 0 2 2 0 2" />
+    <line x1="0" y1="0" x2="0" y2="2" style="stroke:black; stroke-width:0.25" />
+    <line x1="1" y1="0" x2="1" y2="2" style="stroke:black; stroke-width:0.25" />
+</pattern>
+<pattern id="verticaal_breed" width="10" height="10" patternUnits="userSpaceOnUse">
+    <path style="fill: white;" d="M 0 0 10 0 10 10 0 10" />
+    <line x1="0" y1="0" x2="0" y2="10" style="stroke:black; stroke-width:0.25" />
+    <line x1="5" y1="0" x2="5" y2="10" style="stroke:black; stroke-width:0.25" />
+</pattern>
+<pattern id="horizontaal_breed" width="10" height="10" patternUnits="userSpaceOnUse">
+    <path style="fill: white;" d="M 0 0 10 0 10 10 0 10" />
+    <line x1="0" y1="0" x2="10" y2="0" style="stroke:black; stroke-width:0.25" />
+    <line x1="0" y1="5" x2="10" y2="5" style="stroke:black; stroke-width:0.25" />
 </pattern>
 <pattern id="NEN47_1_metselwerk_baksteen_100" width="3" height="3" patternTransform="rotate(45 0 0) scale(0.75 0.75)" patternUnits="userSpaceOnUse">
     no_background
@@ -5197,174 +5250,174 @@ text.DIMENSION, tspan.DIMENSION { /* 2.5mm */ font-size: 4.13px; }
 	<line x1="0" y1="0" x2="3" y2="0" style="stroke:black; stroke-width:0.15" />
 	<line x1="0" y1="1" x2="3" y2="0" style="stroke:black; stroke-width:0.15" />
 </pattern>
-</defs>    <g ifc:name="Elevation CON_renvooi_palenplan" class="section" ifc:plane="[[1.000000,0.000000,0.000000,0.000000],[0.000000,1.000000,0.000000,0.000000],[0.000000,0.000000,1.000000,0.000000],[0.000000,0.000000,0.000000,1.000000]]" ifc:matrix3="[[10.000000,0.000000,502.202911],[0.000000,10.000000,-296.002031],[0.000000,0.000000,1.000000]]">
-        <g id="product-4ad6e9ca-260c-453e-a71f-84095950c1c4" class="IfcBuildingElementProxy material-null projection" ifc:name="Type 2" ifc:guid="1ArkdA9Wn5FgSVX0bPKC74">
-            <path d="M28.5607,157.534 L28.5607,157.9"/>
-            <path d="M28.5607,157.534 L28.5607,157.9"/>
-            <path d="M26.3607,156.8 L27.4607,156.8"/>
-            <path d="M26.3607,156.8 L27.4607,156.8"/>
-            <path d="M28.9274,157.9 L29.2941,157.9"/>
-            <path d="M28.9274,157.9 L29.2941,157.9"/>
-            <path d="M30.7607,156.8 L29.6607,156.8"/>
-            <path d="M30.7607,156.8 L29.6607,156.8"/>
-            <path d="M28.5607,155.7 L29.6607,155.7"/>
-            <path d="M29.6607,155.7 L28.5607,155.7"/>
-            <path d="M29.2941,157.9 L29.6607,157.534"/>
-            <path d="M29.2941,157.9 L29.6607,157.534"/>
-            <path d="M28.9274,157.9 L28.5607,157.9"/>
-            <path d="M28.9274,157.9 L28.5607,157.9"/>
-            <path d="M28.9274,156.8 L29.2941,156.8"/>
-            <path d="M28.9274,156.8 L29.2941,156.8"/>
-            <path d="M28.9274,157.9 L29.6607,157.167"/>
-            <path d="M28.9274,157.9 L29.6607,157.167"/>
-            <path d="M28.9274,156.8 L28.5607,156.8"/>
-            <path d="M28.9274,156.8 L28.5607,156.8"/>
-            <path d="M28.5607,157.9 L29.6607,156.8"/>
-            <path d="M28.5607,157.9 L29.6607,156.8"/>
-            <path d="M28.1941,156.8 L28.5607,156.8"/>
-            <path d="M28.1941,156.8 L28.5607,156.8"/>
-            <path d="M27.4607,156.8 L27.4607,156.434"/>
-            <path d="M27.4607,156.8 L27.4607,156.434"/>
-            <path d="M28.5607,157.534 L29.2941,156.8"/>
-            <path d="M28.5607,157.534 L29.2941,156.8"/>
-            <path d="M28.5607,157.9 L27.4607,157.9"/>
-            <path d="M27.4607,157.9 L28.5607,157.9"/>
-            <path d="M28.1941,156.8 L27.8274,156.8"/>
-            <path d="M28.1941,156.8 L27.8274,156.8"/>
-            <path d="M27.4607,156.434 L27.4607,156.067"/>
-            <path d="M27.4607,156.434 L27.4607,156.067"/>
-            <path d="M28.9274,156.8 L28.5607,157.167"/>
-            <path d="M28.9274,156.8 L28.5607,157.167"/>
-            <path d="M27.8274,156.8 L27.4607,156.8"/>
-            <path d="M27.8274,156.8 L27.4607,156.8"/>
-            <path d="M27.4607,155.7 L27.4607,156.067"/>
-            <path d="M27.4607,155.7 L27.4607,156.067"/>
-            <path d="M28.1941,156.8 L28.5607,156.434"/>
-            <path d="M28.1941,156.8 L28.5607,156.434"/>
-            <path d="M28.5607,157.534 L28.5607,157.167"/>
-            <path d="M28.5607,157.534 L28.5607,157.167"/>
-            <path d="M29.2941,157.9 L29.6607,157.9"/>
-            <path d="M29.2941,157.9 L29.6607,157.9"/>
-            <path d="M27.8274,156.8 L28.5607,156.067"/>
-            <path d="M27.8274,156.8 L28.5607,156.067"/>
-            <path d="M29.6607,157.167 L29.6607,156.8"/>
-            <path d="M29.6607,157.167 L29.6607,156.8"/>
-            <path d="M28.5607,157.167 L28.5607,156.8"/>
-            <path d="M28.5607,157.167 L28.5607,156.8"/>
-            <path d="M29.6607,155.7 L29.6607,156.8"/>
-            <path d="M29.6607,156.8 L29.6607,155.7"/>
-            <path d="M27.4607,156.8 L28.5607,155.7"/>
-            <path d="M27.4607,156.8 L28.5607,155.7"/>
-            <path d="M29.6607,157.167 L29.6607,157.534"/>
-            <path d="M29.6607,157.167 L29.6607,157.534"/>
-            <path d="M28.5607,156.8 L28.5607,156.434"/>
-            <path d="M28.5607,156.8 L28.5607,156.434"/>
-            <path d="M27.4607,155.7 L27.8274,155.7"/>
-            <path d="M27.4607,155.7 L27.8274,155.7"/>
-            <path d="M27.4607,156.434 L28.1941,155.7"/>
-            <path d="M27.4607,156.434 L28.1941,155.7"/>
-            <path d="M29.6607,157.534 L29.6607,157.9"/>
-            <path d="M29.6607,157.534 L29.6607,157.9"/>
-            <path d="M28.5607,156.434 L28.5607,156.067"/>
-            <path d="M28.5607,156.434 L28.5607,156.067"/>
-            <path d="M27.4607,157.9 L27.4607,156.8"/>
-            <path d="M27.4607,156.8 L27.4607,157.9"/>
-            <path d="M27.4607,156.067 L27.8274,155.7"/>
-            <path d="M27.4607,156.067 L27.8274,155.7"/>
-            <path d="M27.8274,155.7 L28.1941,155.7"/>
-            <path d="M27.8274,155.7 L28.1941,155.7"/>
-            <path d="M28.5607,156.067 L28.5607,155.7"/>
-            <path d="M28.5607,156.067 L28.5607,155.7"/>
-            <path d="M28.5607,159 L28.5607,157.9"/>
-            <path d="M28.5607,157.9 L28.5607,159"/>
-            <path d="M28.1941,155.7 L28.5607,155.7"/>
-            <path d="M28.1941,155.7 L28.5607,155.7"/>
-            <path d="M29.6607,156.8 L29.2941,156.8"/>
-            <path d="M29.2941,156.8 L29.6607,156.8"/>
-            <path d="M28.5607,154.6 L28.5607,155.7"/>
-            <path d="M28.5607,154.6 L28.5607,155.7"/>
-        </g>
+</defs>    <g ifc:name="Elevation CON_renvooi_palenplan" class="section" ifc:plane="[[1.000000,0.000000,0.000000,0.000000],[0.000000,1.000000,0.000000,0.000000],[0.000000,0.000000,1.000000,1.600006],[0.000000,0.000000,0.000000,1.000000]]" ifc:matrix3="[[10.000000,0.000000,502.202911],[0.000000,10.000000,-296.002031],[0.000000,0.000000,1.000000]]">
         <g id="product-bc5258d9-8f15-4d3b-bd64-1d107cbecd33" class="IfcBuildingElementProxy material-null projection" ifc:name="Type 1" ifc:guid="2yKbZPZnLDExra7H1yliqp">
-            <path d="M30.7607,144.3 L29.6607,144.3"/>
-            <path d="M30.7607,144.3 L29.6607,144.3"/>
-            <path d="M29.6607,143.934 L29.6607,143.567"/>
-            <path d="M29.6607,143.934 L29.6607,143.567"/>
-            <path d="M28.9274,143.2 L28.5607,143.2"/>
-            <path d="M28.9274,143.2 L28.5607,143.2"/>
-            <path d="M28.9274,143.2 L28.5607,143.567"/>
-            <path d="M28.9274,143.2 L28.5607,143.567"/>
-            <path d="M27.8274,143.2 L28.1941,143.2"/>
-            <path d="M27.8274,143.2 L28.1941,143.2"/>
-            <path d="M27.8274,144.3 L28.1941,144.3"/>
-            <path d="M27.8274,144.3 L28.1941,144.3"/>
-            <path d="M29.6607,144.3 L29.6607,143.934"/>
-            <path d="M29.6607,144.3 L29.6607,143.934"/>
-            <path d="M28.5607,143.2 L27.4607,144.3"/>
-            <path d="M28.5607,143.2 L27.4607,144.3"/>
-            <path d="M28.5607,142.1 L28.5607,143.2"/>
-            <path d="M28.5607,142.1 L28.5607,143.2"/>
-            <path d="M27.8274,144.3 L27.4607,144.3"/>
-            <path d="M27.8274,144.3 L27.4607,144.3"/>
-            <path d="M29.6607,143.2 L28.5607,144.3"/>
-            <path d="M29.6607,143.2 L28.5607,144.3"/>
-            <path d="M28.9274,143.2 L29.2941,143.2"/>
-            <path d="M28.9274,143.2 L29.2941,143.2"/>
-            <path d="M28.5607,144.3 L28.9274,144.3"/>
-            <path d="M28.5607,144.3 L28.9274,144.3"/>
-            <path d="M28.5607,143.567 L28.5607,143.934"/>
-            <path d="M28.5607,143.567 L28.5607,143.934"/>
-            <path d="M27.4607,143.2 L27.8274,143.2"/>
-            <path d="M27.4607,143.2 L27.8274,143.2"/>
-            <path d="M27.4607,143.2 L27.4607,143.567"/>
-            <path d="M27.4607,143.2 L27.4607,143.567"/>
-            <path d="M29.6607,143.2 L29.2941,143.2"/>
-            <path d="M29.6607,143.2 L29.2941,143.2"/>
-            <path d="M28.1941,143.2 L28.5607,143.2"/>
-            <path d="M28.1941,143.2 L28.5607,143.2"/>
-            <path d="M28.1941,144.3 L28.5607,143.934"/>
-            <path d="M28.1941,144.3 L28.5607,143.934"/>
-            <path d="M27.4607,143.567 L27.4607,143.934"/>
-            <path d="M27.4607,143.567 L27.4607,143.934"/>
-            <path d="M28.5607,144.3 L28.5607,143.934"/>
-            <path d="M28.5607,144.3 L28.5607,143.934"/>
-            <path d="M29.6607,144.3 L29.2941,144.3"/>
-            <path d="M29.6607,144.3 L29.2941,144.3"/>
-            <path d="M29.6607,143.2 L29.6607,143.567"/>
-            <path d="M29.6607,143.2 L29.6607,143.567"/>
-            <path d="M27.8274,144.3 L28.5607,143.567"/>
-            <path d="M27.8274,144.3 L28.5607,143.567"/>
-            <path d="M27.4607,143.567 L27.8274,143.2"/>
+            <path d="M29.6607,144.3 L30.7607,144.3"/>
+            <path d="M29.6607,144.3 L30.7607,144.3"/>
+            <path d="M29.6607,143.567 L29.6607,143.934"/>
+            <path d="M29.6607,143.567 L29.6607,143.934"/>
+            <path d="M28.5607,143.2 L28.9274,143.2"/>
+            <path d="M28.5607,143.2 L28.9274,143.2"/>
+            <path d="M28.5607,143.567 L28.9274,143.2"/>
+            <path d="M28.5607,143.567 L28.9274,143.2"/>
+            <path d="M28.1941,143.2 L27.8274,143.2"/>
+            <path d="M28.1941,143.2 L27.8274,143.2"/>
+            <path d="M28.1941,144.3 L27.8274,144.3"/>
+            <path d="M28.1941,144.3 L27.8274,144.3"/>
+            <path d="M29.6607,143.934 L29.6607,144.3"/>
+            <path d="M29.6607,143.934 L29.6607,144.3"/>
+            <path d="M27.4607,144.3 L28.5607,143.2"/>
+            <path d="M27.4607,144.3 L28.5607,143.2"/>
+            <path d="M28.5607,143.2 L28.5607,142.1"/>
+            <path d="M28.5607,143.2 L28.5607,142.1"/>
+            <path d="M27.4607,144.3 L27.8274,144.3"/>
+            <path d="M27.4607,144.3 L27.8274,144.3"/>
+            <path d="M28.5607,144.3 L29.6607,143.2"/>
+            <path d="M28.5607,144.3 L29.6607,143.2"/>
+            <path d="M29.2941,143.2 L28.9274,143.2"/>
+            <path d="M29.2941,143.2 L28.9274,143.2"/>
+            <path d="M28.9274,144.3 L28.5607,144.3"/>
+            <path d="M28.9274,144.3 L28.5607,144.3"/>
+            <path d="M28.5607,143.934 L28.5607,143.567"/>
+            <path d="M28.5607,143.934 L28.5607,143.567"/>
+            <path d="M27.8274,143.2 L27.4607,143.2"/>
+            <path d="M27.8274,143.2 L27.4607,143.2"/>
+            <path d="M27.4607,143.567 L27.4607,143.2"/>
+            <path d="M27.4607,143.567 L27.4607,143.2"/>
+            <path d="M29.2941,143.2 L29.6607,143.2"/>
+            <path d="M29.2941,143.2 L29.6607,143.2"/>
+            <path d="M28.5607,143.2 L28.1941,143.2"/>
+            <path d="M28.5607,143.2 L28.1941,143.2"/>
+            <path d="M28.5607,143.934 L28.1941,144.3"/>
+            <path d="M28.5607,143.934 L28.1941,144.3"/>
+            <path d="M27.4607,143.934 L27.4607,143.567"/>
+            <path d="M27.4607,143.934 L27.4607,143.567"/>
+            <path d="M28.5607,143.934 L28.5607,144.3"/>
+            <path d="M28.5607,143.934 L28.5607,144.3"/>
+            <path d="M29.2941,144.3 L29.6607,144.3"/>
+            <path d="M29.2941,144.3 L29.6607,144.3"/>
+            <path d="M29.6607,143.567 L29.6607,143.2"/>
+            <path d="M29.6607,143.567 L29.6607,143.2"/>
+            <path d="M28.5607,143.567 L27.8274,144.3"/>
+            <path d="M28.5607,143.567 L27.8274,144.3"/>
             <path d="M27.8274,143.2 L27.4607,143.567"/>
-            <path d="M26.3607,144.3 L27.4607,144.3"/>
-            <path d="M26.3607,144.3 L27.4607,144.3"/>
-            <path d="M27.4607,143.934 L27.4607,144.3"/>
-            <path d="M27.4607,143.934 L27.4607,144.3"/>
-            <path d="M29.6607,144.3 L29.6607,145.4"/>
+            <path d="M27.4607,143.567 L27.8274,143.2"/>
+            <path d="M27.4607,144.3 L26.3607,144.3"/>
+            <path d="M27.4607,144.3 L26.3607,144.3"/>
+            <path d="M27.4607,144.3 L27.4607,143.934"/>
+            <path d="M27.4607,144.3 L27.4607,143.934"/>
             <path d="M29.6607,145.4 L29.6607,144.3"/>
-            <path d="M27.4607,143.934 L28.1941,143.2"/>
+            <path d="M29.6607,144.3 L29.6607,145.4"/>
             <path d="M28.1941,143.2 L27.4607,143.934"/>
-            <path d="M29.6607,145.4 L28.5607,145.4"/>
+            <path d="M27.4607,143.934 L28.1941,143.2"/>
             <path d="M28.5607,145.4 L29.6607,145.4"/>
-            <path d="M28.1941,144.3 L28.5607,144.3"/>
-            <path d="M28.1941,144.3 L28.5607,144.3"/>
+            <path d="M29.6607,145.4 L28.5607,145.4"/>
+            <path d="M28.5607,144.3 L28.1941,144.3"/>
+            <path d="M28.5607,144.3 L28.1941,144.3"/>
             <path d="M28.5607,145.4 L28.5607,144.3"/>
             <path d="M28.5607,144.3 L28.5607,145.4"/>
-            <path d="M28.5607,143.567 L28.5607,143.2"/>
             <path d="M28.5607,143.2 L28.5607,143.567"/>
-            <path d="M28.5607,146.5 L28.5607,145.4"/>
+            <path d="M28.5607,143.567 L28.5607,143.2"/>
             <path d="M28.5607,145.4 L28.5607,146.5"/>
-            <path d="M29.2941,144.3 L28.9274,144.3"/>
-            <path d="M29.2941,144.3 L28.9274,144.3"/>
-            <path d="M29.2941,143.2 L28.5607,143.934"/>
+            <path d="M28.5607,146.5 L28.5607,145.4"/>
+            <path d="M28.9274,144.3 L29.2941,144.3"/>
+            <path d="M28.9274,144.3 L29.2941,144.3"/>
             <path d="M28.5607,143.934 L29.2941,143.2"/>
-            <path d="M29.2941,144.3 L29.6607,143.934"/>
+            <path d="M29.2941,143.2 L28.5607,143.934"/>
             <path d="M29.6607,143.934 L29.2941,144.3"/>
+            <path d="M29.2941,144.3 L29.6607,143.934"/>
             <path d="M27.4607,145.4 L27.4607,144.3"/>
             <path d="M27.4607,144.3 L27.4607,145.4"/>
-            <path d="M28.9274,144.3 L29.6607,143.567"/>
             <path d="M29.6607,143.567 L28.9274,144.3"/>
-            <path d="M28.5607,145.4 L27.4607,145.4"/>
+            <path d="M28.9274,144.3 L29.6607,143.567"/>
             <path d="M27.4607,145.4 L28.5607,145.4"/>
+            <path d="M28.5607,145.4 L27.4607,145.4"/>
+        </g>
+        <g id="product-4ad6e9ca-260c-453e-a71f-84095950c1c4" class="IfcBuildingElementProxy material-null projection" ifc:name="Type 2" ifc:guid="1ArkdA9Wn5FgSVX0bPKC74">
+            <path d="M28.5607,157.9 L28.5607,157.534"/>
+            <path d="M28.5607,157.9 L28.5607,157.534"/>
+            <path d="M27.4607,156.8 L26.3607,156.8"/>
+            <path d="M27.4607,156.8 L26.3607,156.8"/>
+            <path d="M29.2941,157.9 L28.9274,157.9"/>
+            <path d="M29.2941,157.9 L28.9274,157.9"/>
+            <path d="M29.6607,156.8 L30.7607,156.8"/>
+            <path d="M29.6607,156.8 L30.7607,156.8"/>
+            <path d="M29.6607,155.7 L28.5607,155.7"/>
+            <path d="M28.5607,155.7 L29.6607,155.7"/>
+            <path d="M29.6607,157.534 L29.2941,157.9"/>
+            <path d="M29.6607,157.534 L29.2941,157.9"/>
+            <path d="M28.5607,157.9 L28.9274,157.9"/>
+            <path d="M28.5607,157.9 L28.9274,157.9"/>
+            <path d="M29.2941,156.8 L28.9274,156.8"/>
+            <path d="M29.2941,156.8 L28.9274,156.8"/>
+            <path d="M29.6607,157.167 L28.9274,157.9"/>
+            <path d="M29.6607,157.167 L28.9274,157.9"/>
+            <path d="M28.5607,156.8 L28.9274,156.8"/>
+            <path d="M28.5607,156.8 L28.9274,156.8"/>
+            <path d="M29.6607,156.8 L28.5607,157.9"/>
+            <path d="M29.6607,156.8 L28.5607,157.9"/>
+            <path d="M28.5607,156.8 L28.1941,156.8"/>
+            <path d="M28.5607,156.8 L28.1941,156.8"/>
+            <path d="M27.4607,156.434 L27.4607,156.8"/>
+            <path d="M27.4607,156.434 L27.4607,156.8"/>
+            <path d="M29.2941,156.8 L28.5607,157.534"/>
+            <path d="M29.2941,156.8 L28.5607,157.534"/>
+            <path d="M28.5607,157.9 L27.4607,157.9"/>
+            <path d="M27.4607,157.9 L28.5607,157.9"/>
+            <path d="M27.8274,156.8 L28.1941,156.8"/>
+            <path d="M27.8274,156.8 L28.1941,156.8"/>
+            <path d="M27.4607,156.067 L27.4607,156.434"/>
+            <path d="M27.4607,156.067 L27.4607,156.434"/>
+            <path d="M28.5607,157.167 L28.9274,156.8"/>
+            <path d="M28.5607,157.167 L28.9274,156.8"/>
+            <path d="M27.4607,156.8 L27.8274,156.8"/>
+            <path d="M27.4607,156.8 L27.8274,156.8"/>
+            <path d="M27.4607,156.067 L27.4607,155.7"/>
+            <path d="M27.4607,156.067 L27.4607,155.7"/>
+            <path d="M28.5607,156.434 L28.1941,156.8"/>
+            <path d="M28.5607,156.434 L28.1941,156.8"/>
+            <path d="M28.5607,157.167 L28.5607,157.534"/>
+            <path d="M28.5607,157.167 L28.5607,157.534"/>
+            <path d="M29.6607,157.9 L29.2941,157.9"/>
+            <path d="M29.6607,157.9 L29.2941,157.9"/>
+            <path d="M28.5607,156.067 L27.8274,156.8"/>
+            <path d="M28.5607,156.067 L27.8274,156.8"/>
+            <path d="M29.6607,156.8 L29.6607,157.167"/>
+            <path d="M29.6607,156.8 L29.6607,157.167"/>
+            <path d="M28.5607,156.8 L28.5607,157.167"/>
+            <path d="M28.5607,156.8 L28.5607,157.167"/>
+            <path d="M29.6607,156.8 L29.6607,155.7"/>
+            <path d="M29.6607,155.7 L29.6607,156.8"/>
+            <path d="M28.5607,155.7 L27.4607,156.8"/>
+            <path d="M28.5607,155.7 L27.4607,156.8"/>
+            <path d="M29.6607,157.534 L29.6607,157.167"/>
+            <path d="M29.6607,157.534 L29.6607,157.167"/>
+            <path d="M28.5607,156.434 L28.5607,156.8"/>
+            <path d="M28.5607,156.434 L28.5607,156.8"/>
+            <path d="M27.8274,155.7 L27.4607,155.7"/>
+            <path d="M27.8274,155.7 L27.4607,155.7"/>
+            <path d="M28.1941,155.7 L27.4607,156.434"/>
+            <path d="M28.1941,155.7 L27.4607,156.434"/>
+            <path d="M29.6607,157.9 L29.6607,157.534"/>
+            <path d="M29.6607,157.9 L29.6607,157.534"/>
+            <path d="M28.5607,156.067 L28.5607,156.434"/>
+            <path d="M28.5607,156.067 L28.5607,156.434"/>
+            <path d="M27.4607,156.8 L27.4607,157.9"/>
+            <path d="M27.4607,157.9 L27.4607,156.8"/>
+            <path d="M27.8274,155.7 L27.4607,156.067"/>
+            <path d="M27.8274,155.7 L27.4607,156.067"/>
+            <path d="M28.1941,155.7 L27.8274,155.7"/>
+            <path d="M28.1941,155.7 L27.8274,155.7"/>
+            <path d="M28.5607,155.7 L28.5607,156.067"/>
+            <path d="M28.5607,155.7 L28.5607,156.067"/>
+            <path d="M28.5607,157.9 L28.5607,159"/>
+            <path d="M28.5607,159 L28.5607,157.9"/>
+            <path d="M28.5607,155.7 L28.1941,155.7"/>
+            <path d="M28.5607,155.7 L28.1941,155.7"/>
+            <path d="M29.2941,156.8 L29.6607,156.8"/>
+            <path d="M29.6607,156.8 L29.2941,156.8"/>
+            <path d="M28.5607,155.7 L28.5607,154.6"/>
+            <path d="M28.5607,155.7 L28.5607,154.6"/>
         </g>
     </g>
   <defs/>
@@ -5477,6 +5530,9 @@ text.DIMENSION, tspan.DIMENSION { /* 2.5mm */ font-size: 4.13px; }
   <line class="GlobalId-1higrhPaT1AA45MVGyM61F IfcAnnotation PredefinedType-LINEWORK dashed" x1="141.9857177734375" x2="158.98568725585938" y1="65.60566711425781" y2="65.60566711425781"/>
   <line class="GlobalId-1higrhPaT1AA45MVGyM61F IfcAnnotation PredefinedType-LINEWORK dashed" x1="141.9857177734375" x2="158.98568725585938" y1="74.60564422607422" y2="74.60564422607422"/>
   <line class="GlobalId-1higrhPaT1AA45MVGyM61F IfcAnnotation PredefinedType-LINEWORK dashed" x1="212.1357421875" x2="124.9857406616211" y1="93.10566711425781" y2="93.10566711425781"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(22.93572425842285, 134.05038452148438) rotate(-0.0)">
+    <tspan class="GlobalId-3twDcerAb8oeqBls80V9gF IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">Symbool</tspan>
+  </text>
   <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(58.91072082519531, 163.05038452148438) rotate(-0.0)">
     <tspan class="GlobalId-2f0M6_wzf6kRgKggGgcb4b IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">44</tspan>
   </text>
@@ -5485,9 +5541,6 @@ text.DIMENSION, tspan.DIMENSION { /* 2.5mm */ font-size: 4.13px; }
   </text>
   <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(100.48577117919922, 134.05038452148438) rotate(-0.0)">
     <tspan class="GlobalId-1PuhxbHQv3DuAytHz6U51l IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">O.K. BALK</tspan>
-  </text>
-  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(44.53572082519531, 144.30039978027344) rotate(-0.0)">
-    <tspan class="GlobalId-1DWb6TyO13aQS4icZZje6n IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">220</tspan>
   </text>
   <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(166.93576049804688, 156.80039978027344) rotate(-0.0)">
     <tspan class="GlobalId-3AxOGIGufF$xcmHPv8WSQl IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">-1000</tspan>
@@ -5514,14 +5567,26 @@ text.DIMENSION, tspan.DIMENSION { /* 2.5mm */ font-size: 4.13px; }
   <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(58.91072082519531, 156.80039978027344) rotate(-0.0)">
     <tspan class="GlobalId-1olHTVB4D66g1xVw4lfmYs IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">28</tspan>
   </text>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(80.58575439453125, 134.05038452148438) rotate(-0.0)">
+    <tspan class="GlobalId-3dI3JinkX43w2gMA9cxp8d IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">INHEINIVEAU</tspan>
+  </text>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(66.58573913574219, 134.05038452148438) rotate(-0.0)">
+    <tspan class="GlobalId-3VnfFPP55BXuyXZHIcKo4f IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">LENGTE</tspan>
+  </text>
   <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(58.91072082519531, 144.30039978027344) rotate(-0.0)">
     <tspan class="GlobalId-3cdxvvxDXBfPJO2e2YZDDz IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">16</tspan>
+  </text>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(107.63577270507812, 144.30039978027344) rotate(-0.0)">
+    <tspan class="GlobalId-3AhwrZ$XfA2AH9JoKGZqk4 IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">-1020</tspan>
   </text>
   <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(156.435791015625, 134.05038452148438) rotate(-0.0)">
     <tspan class="GlobalId-0XTjmdebX15wubfsT$ClB5 IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">AFHAKHOOGTE</tspan>
   </text>
   <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(89.2857437133789, 156.80039978027344) rotate(-0.0)">
     <tspan class="GlobalId-0MpBd_4Fj3IQRBFbc98vYM IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">-19,00</tspan>
+  </text>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(135.58580017089844, 144.30039978027344) rotate(-0.0)">
+    <tspan class="GlobalId-2JaBOMMQ9AMvYv_7u4K$xC IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">-670</tspan>
   </text>
   <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(180.2857208251953, 92.60567474365234) rotate(-0.0)">
     <tspan class="GlobalId-2ITmWZVn5BLvnwitCYXFn8 IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">puntniveau</tspan>
@@ -5532,20 +5597,14 @@ text.DIMENSION, tspan.DIMENSION { /* 2.5mm */ font-size: 4.13px; }
   <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(89.2857437133789, 128.05039978027344) rotate(-0.0)">
     <tspan class="GlobalId-1eLBsNnH51tBqKX0cunbac IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">[m tov NAP]</tspan>
   </text>
-  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(53.735740661621094, 134.05038452148438) rotate(-0.0)">
-    <tspan class="GlobalId-1iWA$xO0r7Pgx3qs2OXKdn IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">AANTAL</tspan>
-  </text>
   <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(29.771089553833008, 108.211181640625) rotate(-0.0)">
     <tspan class="GlobalId-3khcptwWv7uAZqSW7kD2YJ IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">-Wapening volgens opgaaf fabrikant</tspan>
   </text>
   <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(135.58580017089844, 156.80039978027344) rotate(-0.0)">
     <tspan class="GlobalId-3CYXbFSMX6MAb4Pic97tWp IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">-670</tspan>
   </text>
-  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(72.38575744628906, 144.30039978027344) rotate(-0.0)">
-    <tspan class="GlobalId-0hMAV9DiHFbvKeFYH7TrlP IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">22,33</tspan>
-  </text>
-  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(22.93572425842285, 134.05038452148438) rotate(-0.0)">
-    <tspan class="GlobalId-3twDcerAb8oeqBls80V9gF IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">Symbool</tspan>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(44.53572082519531, 144.30039978027344) rotate(-0.0)">
+    <tspan class="GlobalId-1DWb6TyO13aQS4icZZje6n IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">220</tspan>
   </text>
   <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(89.2857437133789, 144.30039978027344) rotate(-0.0)">
     <tspan class="GlobalId-3HOjymUl12AgrLujU61$rg IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">-21,00</tspan>
@@ -5571,26 +5630,17 @@ text.DIMENSION, tspan.DIMENSION { /* 2.5mm */ font-size: 4.13px; }
   <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(135.58580017089844, 128.05039978027344) rotate(-0.0)">
     <tspan class="GlobalId-30t0_U9VX8yPDrYRHLK5ys IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">[mm tov PEIL]</tspan>
   </text>
-  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(80.58575439453125, 134.05038452148438) rotate(-0.0)">
-    <tspan class="GlobalId-3dI3JinkX43w2gMA9cxp8d IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">INHEINIVEAU</tspan>
-  </text>
-  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(66.58573913574219, 134.05038452148438) rotate(-0.0)">
-    <tspan class="GlobalId-3VnfFPP55BXuyXZHIcKo4f IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">LENGTE</tspan>
-  </text>
-  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(107.63577270507812, 144.30039978027344) rotate(-0.0)">
-    <tspan class="GlobalId-3AhwrZ$XfA2AH9JoKGZqk4 IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">-1020</tspan>
-  </text>
   <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(72.38575744628906, 156.80039978027344) rotate(-0.0)">
     <tspan class="GlobalId-2vbaP4CtD26Bk6ZGVAuEzl IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">20,33</tspan>
-  </text>
-  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(135.58580017089844, 144.30039978027344) rotate(-0.0)">
-    <tspan class="GlobalId-2JaBOMMQ9AMvYv_7u4K$xC IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">-670</tspan>
   </text>
   <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(22.93572425842285, 44.584659576416016) rotate(-0.0)">
     <tspan class="GlobalId-1JDmRv0Ij3_BfSDsyZ486K IfcAnnotation PredefinedType-TEXT small bold" dy="0em" x="0" y="0">REKENGEGEVENS</tspan>
   </text>
   <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(107.63577270507812, 128.05039978027344) rotate(-0.0)">
     <tspan class="GlobalId-0LMeXsN4DACvUbACHlvhxm IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">[mm tov PEIL]</tspan>
+  </text>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(53.735740661621094, 134.05038452148438) rotate(-0.0)">
+    <tspan class="GlobalId-1iWA$xO0r7Pgx3qs2OXKdn IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">AANTAL</tspan>
   </text>
   <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(72.38575744628906, 128.05039978027344) rotate(-0.0)">
     <tspan class="GlobalId-3iH$Pyp9jE7x1r7hthKvgZ IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">[m]</tspan>
@@ -5600,6 +5650,9 @@ text.DIMENSION, tspan.DIMENSION { /* 2.5mm */ font-size: 4.13px; }
   </text>
   <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(44.53572082519531, 156.80039978027344) rotate(-0.0)">
     <tspan class="GlobalId-121dVaL7j9GRarY7Bc19vP IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">220</tspan>
+  </text>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(72.38575744628906, 144.30039978027344) rotate(-0.0)">
+    <tspan class="GlobalId-0hMAV9DiHFbvKeFYH7TrlP IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">22,33</tspan>
   </text>
   <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(180.2857208251953, 46.605648040771484) rotate(-0.0)">
     <tspan class="GlobalId-0WV9g9$oL1_Q6ysaHIdQQq IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">onderkant fundering</tspan>

@@ -27,7 +27,6 @@ text, tspan { /* 2.5mm */ fill: black; stroke: none; font-family: 'OpenGost Type
 .IfcAnnotation { fill: none; stroke: black; stroke-linecap: round; stroke-width: 0.25; }
 .IfcGeographicElement { fill: none; stroke: black; stroke-linecap: round; stroke-width: 1; }
 .PredefinedType-LINEWORK { stroke: black; stroke-width: 0.25; }
-.PredefinedType-LINEWORK.dashed { stroke-dasharray: 3, 2; }
 .PredefinedType-LINEWORK.fine { stroke-width: 0.18; stroke: #777777; }
 .PredefinedType-LINEWORK.thin { stroke-width: 0.25; }
 .PredefinedType-LINEWORK.medium { stroke-width: 0.35; }
@@ -71,7 +70,6 @@ text, tspan { /* 2.5mm */ fill: black; stroke: none; font-family: 'OpenGost Type
 .PredefinedType-LINEWORK.lineweight_0_70 { stroke-width: 0.7; }
 .PredefinedType-LINEWORK.lineweight_1_00 { stroke-width: 1.0; }
 .PredefinedType-LINEWORK.lineweight_1_40 { stroke-width: 1.4; }
-.PredefinedType-LINEWORK.breakline { stroke:#696969; stroke-width: 0.75; stroke-dasharray: 8, 3, 4, 3; }
 .PredefinedType-LINEWORK.grey { stroke:#808080; }
 .PredefinedType-LINEWORK.black { stroke:black; }
 .PredefinedType-LINEWORK.green { stroke:green; }
@@ -97,12 +95,12 @@ text, tspan { /* 2.5mm */ fill: black; stroke: none; font-family: 'OpenGost Type
 .PredefinedType-LINEWORK.section { marker-start: url(#section-marker); marker-end: url(#section-marker); stroke:black; stroke-width: 0.2; }
 .PredefinedType-LINEWORK.vloeroverspanning { stroke:black; marker-start: url(#vloeroverspanning-marker); marker-end: url(#vloeroverspanning-marker); stroke-width: 0.2; }
 .PredefinedType-LINEWORK.arrow { stroke-width: 0.25; marker-start: url(#arrow-marker-start); marker-end: url(#arrow-marker-end); }
-.PredefinedType-FILLAREA.green { fill:green; stroke:none; }
-.PredefinedType-FILLAREA.blue { fill:blue; stroke:none; }
-.PredefinedType-FILLAREA.yellow { fill:yellow; stroke:none; }
-.PredefinedType-FILLAREA.red { fill:red; stroke:none; }
-.PredefinedType-FILLAREA.purple { fill:purple; stroke:none; }
-.PredefinedType-FILLAREA.darkgrey { fill:#696969; stroke:none; }
+.PredefinedType-FILLAREA.green { fill:green; }
+.PredefinedType-FILLAREA.blue { fill:blue; }
+.PredefinedType-FILLAREA.yellow { fill:yellow; }
+.PredefinedType-FILLAREA.red { fill:red; }
+.PredefinedType-FILLAREA.purple { fill:purple;  }
+.PredefinedType-FILLAREA.darkgrey { fill:#696969; }
 .PredefinedType-FILLAREA.sand { fill: url(#sand); }
 .PredefinedType-FILLAREA.earth { fill: url(#earth); }
 .PredefinedType-FILLAREA.glass { fill: url(#glass); }
@@ -110,13 +108,36 @@ text, tspan { /* 2.5mm */ fill: black; stroke: none; font-family: 'OpenGost Type
 .PredefinedType-FILLAREA.wood { fill: url(#wood); }
 .PredefinedType-FILLAREA.concrete { fill: url(#concrete); }
 .PredefinedType-FILLAREA.black { fill: black; }
+.PredefinedType-FILLAREA.grey { fill: grey; }
 .PredefinedType-FILLAREA.blank { fill: white; stroke: none; }
 .PredefinedType-FILLAREA.white_25 { fill: white; opacity: 0.25; stroke: none; }
 .PredefinedType-FILLAREA.white_50 { fill: white; opacity: 0.5; stroke: none; }
 .PredefinedType-FILLAREA.white_75 { fill: white; opacity: 0.75; stroke: none; }
-.PredefinedType-FILLAREA.black_10 { fill: black; opacity: 0.10; stroke: black; stroke-width: 0.5; }
+.PredefinedType-FILLAREA.black_10 { fill: black; opacity: 0.10; stroke: none }
 .PredefinedType-FILLAREA.black_25 { fill: black; opacity: 0.25; stroke: none; }
-.PredefinedType-FILLAREA.bestaand_gebouw { fill: url( #bestaand_gebouw); stroke: black; }
+.PredefinedType-FILLAREA.none { stroke:none; }
+.PredefinedType-FILLAREA.continuous { stroke-dasharray: 10, 0; }
+.PredefinedType-FILLAREA.dashed { stroke-dasharray: 6, 3; }
+.PredefinedType-FILLAREA.hidden { stroke-dasharray: 9, 3; }
+.PredefinedType-FILLAREA.center { stroke-dasharray: 12, 3, 3, 3; }
+.PredefinedType-FILLAREA.phantom { stroke-dasharray: 12, 3, 3, 3, 3, 3; }
+.PredefinedType-FILLAREA.dot { stroke-dasharray: 1, 3; }
+.PredefinedType-FILLAREA.dashdot { stroke-dasharray: 6, 3, 1, 3; }
+.PredefinedType-FILLAREA.border { stroke-dasharray: 15, 3, 3, 3; }
+.PredefinedType-FILLAREA.divide { stroke-dasharray: 12, 3, 3, 3; }
+.PredefinedType-FILLAREA.lineweight_0_13 { stroke-width: 0.13; }
+.PredefinedType-FILLAREA.lineweight_0_18 { stroke-width: 0.18; }
+.PredefinedType-FILLAREA.lineweight_0_25 { stroke-width: 0.25; }
+.PredefinedType-FILLAREA.lineweight_0_35 { stroke-width: 0.35; }
+.PredefinedType-FILLAREA.lineweight_0_50 { stroke-width: 0.5; }
+.PredefinedType-FILLAREA.lineweight_0_70 { stroke-width: 0.7; }
+.PredefinedType-FILLAREA.lineweight_1_00 { stroke-width: 1.0; }
+.PredefinedType-FILLAREA.lineweight_1_40 { stroke-width: 1.4; }
+.PredefinedType-FILLAREA.bestaand_gebouw { fill: url( #bestaand_gebouw); }
+.PredefinedType-FILLAREA.verticaal_breed { fill: url( #verticaal_breed); }
+.PredefinedType-FILLAREA.verticaal_smal { fill: url( #verticaal_smal); }
+.PredefinedType-FILLAREA.horizontaal_breed { fill: url( #horizontaal_breed); }
+.PredefinedType-FILLAREA.horizontaal_smal { fill: url( #horizontaal_smal); }
 .PredefinedType-FILLAREA.NEN47_1_metselwerk_baksteen{ fill: url(  #NEN47_1_metselwerk_baksteen_10); }
 .PredefinedType-FILLAREA.NEN47_2_speciale_steenachtige_materialen{ fill: url(  #NEN47_2_speciale_steenachtige_materialen_10); }
 .PredefinedType-FILLAREA.NEN47_3_metselwerk_niet_gebakken_kunststeen{ fill: url(  #NEN47_3_metselwerk_niet_gebakken_kunststeen_10); }
@@ -538,6 +559,9 @@ text.DIMENSION, tspan.DIMENSION { /* 2.5mm */ font-size: 4.13px; }
 	<g id="section-arrow">
         <path style="fill: black;" d="M -3 0 L 0 -4 L 3 0" />
     </g>
+    <g id="detail-arrow" transform="translate(0, -18)">
+        <path style="fill: none;" d="M-11 0-7 2V0M-11 0-7-2V0H0V18" />
+    </g>
     <g id="setout-tag">
         <circle fill="white" stroke="black" r="2.5" style="stroke-width: 0.5" />
         <path d="M 0 0 L -2.5 0 A 2.5 2.5 0 0 1 0 -2.5 Z" fill="black" />
@@ -558,7 +582,7 @@ text.DIMENSION, tspan.DIMENSION { /* 2.5mm */ font-size: 4.13px; }
         <path style="fill: white; stroke: black; stroke-width: 0.5;" d="M -2,-2 2,2 M -2,2 2,-2" />
     </g>
 	<g id="dot">
-        <circle r="2" fill="none" stroke="black" style="stroke-width: 0.25;" />
+        <circle r="0.75" fill="none" stroke="black" style="stroke-width: 0.25;" />
     </g>
 	<g id="g10" transform="translate(-5.5, 2.6) scale(-0.01, 0.01) rotate(180)">
       <path d="M 0,0 V 526.43 H 1133.86 V 0 H 0" style="fill:#00a650;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path12" />
@@ -572,6 +596,9 @@ text.DIMENSION, tspan.DIMENSION { /* 2.5mm */ font-size: 4.13px; }
 		 <path style="fill:#000000;stroke:#000000;stroke-width:4;stroke-dasharray:none;stroke-opacity:1" d="m 120.33277,194.67023 -0.82226,-82.55962 z" id="path1-0" />
 		 <path style="fill:#000000;stroke:#000000;stroke-width:4;stroke-dasharray:none;stroke-opacity:1" d="M 149.37487,182.53334 90.540869,124.60812 Z" id="path1-8-0" />
 		 <circle style="fill:none;stroke:#000000;stroke-width:4;stroke-dasharray:none;stroke-opacity:1" id="path2" cx="119.9063" cy="153.38069" r="41.450706" />
+	</g>
+    <g id="c2" transform="translate(0,0)">
+		<circle style="fill:white;stroke:black;stroke-width:0.25;stroke-dasharray:none;stroke-opacity:1" id="path2" cx="0" cy="0" r="5" />
 	</g>
     <g id="hwa" transform=" translate(-7.15,-9.1) scale(0.06)">
 	<path style="fill:#000000;stroke:#000000;stroke-width:4;stroke-dasharray:none;stroke-opacity:1" d="M 78.469755,152.87286 H 161.03347 Z" id="path1" />
@@ -598,10 +625,22 @@ text.DIMENSION, tspan.DIMENSION { /* 2.5mm */ font-size: 4.13px; }
 	 <g id="kol_bov_ond" transform="translate(0, 1.25) scale(1.5)">
 		<path d="M8 0H0L-3-6" style="fill:none;stroke:#000000; stroke-width:0.15;" id="path1" />
 	 </g>
-	 <g id="kol_ond" transform="translate(0, -1.25) scale(1.5)">
+	 <g id="kol_ond" transform="translate(0, -3.25) scale(1.5)">
 		<path d="M8 0H0L-3 6" style="fill:none;stroke:#000000; stroke-width:0.15;" id="path1" />
 	 </g>
-	  <g id="kol_ond_ond" transform="translate(0, -3.25) scale(1.5)">
+     <g id="kol_ond_ond" transform="translate(0, -3.25) scale(1.5)">
+		<path d="M8 0H0L-3-6" style="fill:none;stroke:#000000; stroke-width:0.15;" id="path1" />
+	 </g>
+     <g id="kol_bov_50" transform="translate(0, 1.25) scale(1.5)">
+		<path d="M 10 0 H 0 L -6.7 12.4" style="fill:none;stroke:#000000; stroke-width:0.15;" id="path1" />
+	 </g>
+	 <g id="kol_bov_ond_50" transform="translate(0, 0.25) scale(1.5)">
+		<path d="M10 0H0L-4.5 9" style="fill:none;stroke:#000000; stroke-width:0.15;" id="path1" />
+	 </g>
+	 <g id="kol_ond_50" transform="translate(0, -4.25) scale(1.5)">
+		<path d="M 10 0 H 0 L -6.7 12.4" style="fill:none;stroke:#000000; stroke-width:0.15;" id="path1" />
+	 </g>
+	<g id="kol_ond_ond_50" transform="translate(0, -6.25) scale(1.5)">
 		<path d="M8 0H0L-3-6" style="fill:none;stroke:#000000; stroke-width:0.15;" id="path1" />
 	 </g>
 	 <g id="pn_1_8">
@@ -772,6 +811,21 @@ text.DIMENSION, tspan.DIMENSION { /* 2.5mm */ font-size: 4.13px; }
 <pattern id="concrete" width="10" height="10" patternUnits="userSpaceOnUse">
     <path style="fill: white;" d="M 0 0 10 0 10 10 0 10" />
 <path style="stroke:#000000;stroke-width:0.25;stroke-linecap:round" d="M.5.5H.8L.65.9zm1.2 3.7.692-.186-.149.611zm.4 3.2.56.203-.25.6zm1.5-5.3.6-.4-.3.5zm3.2-.3.35.25-.439.594zm.4 7.5.3-.2-.15.4zm1.7-5.6.25.4-.1-.3zm.2 2.8.4.2-.2.3zM.8 2.1l.1.1m.4 4.4.05-.05M2.7 3.4l.1.1m.4 1.7.1-.1m1.6-3.6.05.05M3.732.589 3.628.678M5.5 7.1l.1.1m.5-2.7.1-.1m1.2-2.1.05.05M8.3 8.4l.1.1m1.2 1.2.05-.05M.4 4.9.5 5m1-2.2.1-.1m.6 3 .1.1m1.5 1.5.1-.1m.8-4 .1.1m.3 3.1.05-.05M6.9 8.2l.1.1m.5-6.4.05-.05M8.7 4.3l.1.1m.4 1.8.1-.1M.3.2.4.3m.8 8.8.1-.1m1-7.2.1.1m.7 5.9.1-.1m.9-5.3.1.1m1.2 5.8.1-.1m-1.366.788.06.149M6.6.7l.1.1m1.2 4.7.1-.1m.6-2.8.1.1m.7 4.5.1-.1" />
+</pattern>
+<pattern id="verticaal_smal" width="2" height="2" patternUnits="userSpaceOnUse">
+    <path style="fill: white;" d="M 0 0 2 0 2 2 0 2" />
+    <line x1="0" y1="0" x2="0" y2="2" style="stroke:black; stroke-width:0.25" />
+    <line x1="1" y1="0" x2="1" y2="2" style="stroke:black; stroke-width:0.25" />
+</pattern>
+<pattern id="verticaal_breed" width="10" height="10" patternUnits="userSpaceOnUse">
+    <path style="fill: white;" d="M 0 0 10 0 10 10 0 10" />
+    <line x1="0" y1="0" x2="0" y2="10" style="stroke:black; stroke-width:0.25" />
+    <line x1="5" y1="0" x2="5" y2="10" style="stroke:black; stroke-width:0.25" />
+</pattern>
+<pattern id="horizontaal_breed" width="10" height="10" patternUnits="userSpaceOnUse">
+    <path style="fill: white;" d="M 0 0 10 0 10 10 0 10" />
+    <line x1="0" y1="0" x2="10" y2="0" style="stroke:black; stroke-width:0.25" />
+    <line x1="0" y1="5" x2="10" y2="5" style="stroke:black; stroke-width:0.25" />
 </pattern>
 <pattern id="NEN47_1_metselwerk_baksteen_100" width="3" height="3" patternTransform="rotate(45 0 0) scale(0.75 0.75)" patternUnits="userSpaceOnUse">
     no_background
@@ -5217,30 +5271,13 @@ text.DIMENSION, tspan.DIMENSION { /* 2.5mm */ font-size: 4.13px; }
 	<line x1="0" y1="1" x2="3" y2="0" style="stroke:black; stroke-width:0.15" />
 </pattern>
 </defs>  <defs/>
-  <path class="GlobalId-2TBs_svbb8Qwp6hyntsEgS IfcAnnotation PredefinedType-lood lood" d="M 308.31801891326904 274.0794866382787 L 188.31803798675537 274.0794866382787 L 188.31803798675537 275.0795095264623 L 308.31801891326904 275.0795095264623 L 308.31801891326904 274.0794866382787"/>
-  <path class="GlobalId-1NZ7YSv39E_QkKjRm28c1r IfcAnnotation PredefinedType-FILLAREA natuursteen" d="M 188.31803798675537 362.07940271493885 L 238.31803798675537 362.07940271493885 L 238.31803798675537 360.07935693857166 L 188.31803798675537 360.07935693857166 L 188.31803798675537 362.07940271493885"/>
-  <path class="GlobalId-1NZ7YSv39E_QkKjRm28c1r IfcAnnotation PredefinedType-FILLAREA natuursteen" d="M 688.3179426193237 362.07940271493885 L 318.3180570602417 362.07940271493885 L 318.3180570602417 350.0795095264623 L 688.3179426193237 350.0795095264623 L 688.3179426193237 362.07940271493885"/>
-  <path class="GlobalId-1NZ7YSv39E_QkKjRm28c1r IfcAnnotation PredefinedType-FILLAREA natuursteen" d="M 239.31806087493896 362.07940271493885 L 289.31801319122314 362.07940271493885 L 289.31801319122314 360.07935693857166 L 239.31806087493896 360.07935693857166 L 239.31806087493896 362.07940271493885"/>
-  <path class="GlobalId-1NZ7YSv39E_QkKjRm28c1r IfcAnnotation PredefinedType-FILLAREA natuursteen" d="M 290.31803607940674 362.07940271493885 L 308.31801891326904 362.07940271493885 L 308.31801891326904 360.07935693857166 L 290.31803607940674 360.07935693857166 L 290.31803607940674 362.07940271493885"/>
-  <path class="GlobalId-1sYHB3AeL9RuNv02GEsHJE IfcAnnotation PredefinedType-FILLAREA naald_loofhout_langsarcering" d="M 188.31803798675537 173.87959650155994 L 195.01802921295166 173.87959650155994 L 195.01802921295166 162.4795644581029 L 188.31803798675537 162.4795644581029 L 188.31803798675537 173.87959650155994"/>
-  <path class="GlobalId-1sYHB3AeL9RuNv02GEsHJE IfcAnnotation PredefinedType-FILLAREA naald_loofhout_langsarcering" d="M 188.31803798675537 173.87959650155994 L 195.01802921295166 173.87959650155994 L 195.01802921295166 162.4795644581029 L 188.31803798675537 162.4795644581029 L 188.31803798675537 173.87959650155994"/>
-  <path class="GlobalId-1sYHB3AeL9RuNv02GEsHJE IfcAnnotation PredefinedType-FILLAREA naald_loofhout_langsarcering" d="M 301.61802768707275 173.87959650155994 L 308.31801891326904 173.87959650155994 L 308.31801891326904 162.4795644581029 L 301.61802768707275 162.4795644581029 L 301.61802768707275 173.87959650155994"/>
-  <path class="GlobalId-1sYHB3AeL9RuNv02GEsHJE IfcAnnotation PredefinedType-FILLAREA naald_loofhout_langsarcering" d="M 318.3180570602417 173.87959650155994 L 688.3179426193237 173.87959650155994 L 688.3179426193237 163.8795583545873 L 318.3180570602417 163.8795583545873 L 318.3180570602417 173.87959650155994"/>
-  <path class="GlobalId-0yl9CpPln1PheEkNJ37DjI IfcAnnotation PredefinedType-FILLAREA gewapend_beton_prefab" d="M 188.31803798675537 105.07962396738026 L 308.31801891326904 105.07962396738026 L 308.31801891326904 95.0795858204076 L 188.31803798675537 95.0795858204076 L 188.31803798675537 105.07962396738026"/>
-  <path class="GlobalId-0yl9CpPln1PheEkNJ37DjI IfcAnnotation PredefinedType-FILLAREA gewapend_beton_prefab" d="M 688.3179426193237 105.07962396738026 L 318.3180570602417 105.07962396738026 L 318.3180570602417 95.0795858204076 L 688.3179426193237 95.0795858204076 L 688.3179426193237 105.07962396738026"/>
-  <path class="GlobalId-1Rvyr3YNT0J9uDlcs9lLae IfcAnnotation PredefinedType-FILLAREA naaldhout" d="M 301.61802768707275 142.47967889902088 L 308.31801891326904 142.47967889902088 L 308.31801891326904 131.07964685556385 L 301.61802768707275 131.07964685556385 L 301.61802768707275 142.47967889902088"/>
-  <path class="GlobalId-1Rvyr3YNT0J9uDlcs9lLae IfcAnnotation PredefinedType-FILLAREA naaldhout" d="M 188.31803798675537 142.47967889902088 L 195.01802921295166 142.47967889902088 L 195.01802921295166 131.07964685556385 L 188.31803798675537 131.07964685556385 L 188.31803798675537 142.47967889902088"/>
-  <path class="GlobalId-1Rvyr3YNT0J9uDlcs9lLae IfcAnnotation PredefinedType-FILLAREA naaldhout" d="M 688.3179426193237 142.47967889902088 L 318.3180570602417 142.47967889902088 L 318.3180570602417 131.07964685556385 L 688.3179426193237 131.07964685556385 L 688.3179426193237 142.47967889902088"/>
-  <path class="GlobalId-0irUEGHhvDw81279pljB9B IfcAnnotation PredefinedType-FILLAREA loofhout" d="M 188.31803798675537 158.8796346485326 L 195.01802921295166 158.8796346485326 L 195.01802921295166 147.47960260507557 L 188.31803798675537 147.47960260507557 L 188.31803798675537 158.8796346485326"/>
-  <path class="GlobalId-0irUEGHhvDw81279pljB9B IfcAnnotation PredefinedType-FILLAREA loofhout" d="M 688.3179426193237 158.8796346485326 L 318.3180570602417 158.8796346485326 L 318.3180570602417 147.47960260507557 L 688.3179426193237 147.47960260507557 L 688.3179426193237 158.8796346485326"/>
-  <path class="GlobalId-0irUEGHhvDw81279pljB9B IfcAnnotation PredefinedType-FILLAREA loofhout" d="M 301.61802768707275 158.8796346485326 L 308.31801891326904 158.8796346485326 L 308.31801891326904 147.47960260507557 L 301.61802768707275 147.47960260507557 L 301.61802768707275 158.8796346485326"/>
+  <path class="GlobalId-2XYQ4qq5PCEQanJcd2w7Sw IfcAnnotation PredefinedType-FILLAREA niet_dragende_lichte_scheidingswanden" d="M 188.31803798675537 260.07954767343494 L 308.31801891326904 260.07954767343494 L 308.31801891326904 253.07957819101307 L 188.31803798675537 253.07957819101307 L 188.31803798675537 260.07954767343494"/>
+  <path class="GlobalId-2XYQ4qq5PCEQanJcd2w7Sw IfcAnnotation PredefinedType-FILLAREA niet_dragende_lichte_scheidingswanden" d="M 688.3179426193237 260.07954767343494 L 318.3180570602417 260.07954767343494 L 318.3180570602417 250.0795095264623 L 688.3179426193237 250.0795095264623 L 688.3179426193237 260.07954767343494"/>
   <path class="GlobalId-1iZGzq$89BTQAF8gewRwbd IfcAnnotation PredefinedType-FILLAREA afdichtingsmiddel" d="M 203.31804752349854 331.07964685556385 L 204.3180227279663 331.07964685556385 L 204.3180227279663 326.07972314950916 L 203.31804752349854 326.07972314950916 L 203.31804752349854 331.07964685556385"/>
   <path class="GlobalId-1iZGzq$89BTQAF8gewRwbd IfcAnnotation PredefinedType-FILLAREA afdichtingsmiddel" d="M 188.31803798675537 331.07964685556385 L 190.31803607940674 331.07964685556385 L 190.31803607940674 321.0796087085912 L 188.31803798675537 321.0796087085912 L 188.31803798675537 331.07964685556385"/>
   <path class="GlobalId-1iZGzq$89BTQAF8gewRwbd IfcAnnotation PredefinedType-FILLAREA afdichtingsmiddel" d="M 195.81801891326904 331.07964685556385 L 196.81804180145264 331.07964685556385 L 196.81804180145264 321.0796087085912 L 195.81801891326904 321.0796087085912 L 195.81801891326904 331.07964685556385"/>
   <path class="GlobalId-1iZGzq$89BTQAF8gewRwbd IfcAnnotation PredefinedType-FILLAREA afdichtingsmiddel" d="M 210.8180284500122 331.07964685556385 L 211.8180513381958 331.07964685556385 L 211.8180513381958 329.07960107919666 L 210.8180284500122 329.07960107919666 L 210.8180284500122 331.07964685556385"/>
   <path class="GlobalId-1iZGzq$89BTQAF8gewRwbd IfcAnnotation PredefinedType-FILLAREA afdichtingsmiddel" d="M 318.3180570602417 331.07964685556385 L 688.3179426193237 331.07964685556385 L 688.3179426193237 321.0796087085912 L 318.3180570602417 321.0796087085912 L 318.3180570602417 331.07964685556385"/>
-  <path class="GlobalId-2XYQ4qq5PCEQanJcd2w7Sw IfcAnnotation PredefinedType-FILLAREA niet_dragende_lichte_scheidingswanden" d="M 188.31803798675537 260.07954767343494 L 308.31801891326904 260.07954767343494 L 308.31801891326904 253.07957819101307 L 188.31803798675537 253.07957819101307 L 188.31803798675537 260.07954767343494"/>
-  <path class="GlobalId-2XYQ4qq5PCEQanJcd2w7Sw IfcAnnotation PredefinedType-FILLAREA niet_dragende_lichte_scheidingswanden" d="M 688.3179426193237 260.07954767343494 L 318.3180570602417 260.07954767343494 L 318.3180570602417 250.0795095264623 L 688.3179426193237 250.0795095264623 L 688.3179426193237 260.07954767343494"/>
   <path class="GlobalId-0wewzRu3v1owSoAngRhQFw IfcAnnotation PredefinedType-FILLAREA bekledingsplaat" d="M 188.31803798675537 245.0795858204076 L 308.31801891326904 245.0795858204076 L 308.31801891326904 243.0795400440404 L 188.31803798675537 243.0795400440404 L 188.31803798675537 245.0795858204076"/>
   <path class="GlobalId-0wewzRu3v1owSoAngRhQFw IfcAnnotation PredefinedType-FILLAREA bekledingsplaat" d="M 688.3179426193237 245.0795858204076 L 318.3180570602417 245.0795858204076 L 318.3180570602417 235.07954767343494 L 688.3179426193237 235.07954767343494 L 688.3179426193237 245.0795858204076"/>
   <path class="GlobalId-3l14P$zUPE1xVzDg4_ArGA IfcAnnotation PredefinedType-FILLAREA metselwerk_baksteen" d="M 188.31803798675537 45.07977655527089 L 308.31801891326904 45.07977655527089 L 308.31801891326904 35.07973840829823 L 188.31803798675537 35.07973840829823 L 188.31803798675537 45.07977655527089"/>
@@ -5309,21 +5346,23 @@ text.DIMENSION, tspan.DIMENSION { /* 2.5mm */ font-size: 4.13px; }
   <path class="GlobalId-15NIwU5GP4qB_Q0CfEfHqG IfcAnnotation PredefinedType-FILLAREA metselwerk_niet_gebakken_kunststeen" d="M 688.3179426193237 90.07966211435291 L 318.3180570602417 90.07966211435291 L 318.3180570602417 80.07962396738026 L 688.3179426193237 80.07962396738026 L 688.3179426193237 90.07966211435291"/>
   <path class="GlobalId-2QuR5k_tTFUOL$gTm9RNjl IfcAnnotation PredefinedType-FILLAREA samengestelde_wand_vloer_afwerking" d="M 188.31803798675537 345.0795858204076 L 308.31801891326904 345.0795858204076 L 308.31801891326904 342.0795171558568 L 188.31803798675537 342.0795171558568 L 188.31803798675537 345.0795858204076"/>
   <path class="GlobalId-2QuR5k_tTFUOL$gTm9RNjl IfcAnnotation PredefinedType-FILLAREA samengestelde_wand_vloer_afwerking" d="M 688.3179426193237 345.0795858204076 L 318.3180570602417 345.0795858204076 L 318.3180570602417 335.07954767343494 L 688.3179426193237 335.07954767343494 L 688.3179426193237 345.0795858204076"/>
-  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="end" transform="translate(150.54676818847656, 345.07958984375) rotate(-0.0)">
-    <tspan class="GlobalId-2YLXjxpAjB8B0CPDjOm4xG IfcAnnotation PredefinedType-TEXT header" dy="0em" x="0" y="0">samengesteldewandvloerafwerking</tspan>
-  </text>
-  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="end" transform="translate(150.54676818847656, 60.079734802246094) rotate(-0.0)">
-    <tspan class="GlobalId-3wyI98$lXA0fdHVjpai6fy IfcAnnotation PredefinedType-TEXT header" dy="0em" x="0" y="0">isolatie</tspan>
-  </text>
-  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="end" transform="translate(150.54676818847656, 275.0794982910156) rotate(-0.0)">
-    <tspan class="GlobalId-1Uos8igDD7xPaORI9DKsIo IfcAnnotation PredefinedType-TEXT header" dy="0em" x="0" y="0">lood</tspan>
-  </text>
-  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="end" transform="translate(150.54676818847656, 142.47967529296875) rotate(-0.0)">
-    <tspan class="GlobalId-3EyuIDAqH6ZA3rgw0oTd9u IfcAnnotation PredefinedType-TEXT header" dy="0em" x="0" y="0">naaldhout</tspan>
-  </text>
-  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="end" transform="translate(150.54676818847656, 75.07969665527344) rotate(-0.0)">
-    <tspan class="GlobalId-1M7_BULlH3quNBfprtdqBn IfcAnnotation PredefinedType-TEXT header" dy="0em" x="0" y="0">sierbeton</tspan>
-  </text>
+  <path class="GlobalId-2TBs_svbb8Qwp6hyntsEgS IfcAnnotation PredefinedType-FILLAREA lood" d="M 308.31801891326904 274.0794866382787 L 188.31803798675537 274.0794866382787 L 188.31803798675537 275.0795095264623 L 308.31801891326904 275.0795095264623 L 308.31801891326904 274.0794866382787"/>
+  <path class="GlobalId-1sYHB3AeL9RuNv02GEsHJE IfcAnnotation PredefinedType-FILLAREA naald_loofhout_langsarcering" d="M 188.31803798675537 173.87959650155994 L 195.01802921295166 173.87959650155994 L 195.01802921295166 162.4795644581029 L 188.31803798675537 162.4795644581029 L 188.31803798675537 173.87959650155994"/>
+  <path class="GlobalId-1sYHB3AeL9RuNv02GEsHJE IfcAnnotation PredefinedType-FILLAREA naald_loofhout_langsarcering" d="M 188.31803798675537 173.87959650155994 L 195.01802921295166 173.87959650155994 L 195.01802921295166 162.4795644581029 L 188.31803798675537 162.4795644581029 L 188.31803798675537 173.87959650155994"/>
+  <path class="GlobalId-1sYHB3AeL9RuNv02GEsHJE IfcAnnotation PredefinedType-FILLAREA naald_loofhout_langsarcering" d="M 301.61802768707275 173.87959650155994 L 308.31801891326904 173.87959650155994 L 308.31801891326904 162.4795644581029 L 301.61802768707275 162.4795644581029 L 301.61802768707275 173.87959650155994"/>
+  <path class="GlobalId-1sYHB3AeL9RuNv02GEsHJE IfcAnnotation PredefinedType-FILLAREA naald_loofhout_langsarcering" d="M 318.3180570602417 173.87959650155994 L 688.3179426193237 173.87959650155994 L 688.3179426193237 163.8795583545873 L 318.3180570602417 163.8795583545873 L 318.3180570602417 173.87959650155994"/>
+  <path class="GlobalId-1NZ7YSv39E_QkKjRm28c1r IfcAnnotation PredefinedType-FILLAREA natuursteen" d="M 188.31803798675537 362.07940271493885 L 238.31803798675537 362.07940271493885 L 238.31803798675537 360.07935693857166 L 188.31803798675537 360.07935693857166 L 188.31803798675537 362.07940271493885"/>
+  <path class="GlobalId-1NZ7YSv39E_QkKjRm28c1r IfcAnnotation PredefinedType-FILLAREA natuursteen" d="M 688.3179426193237 362.07940271493885 L 318.3180570602417 362.07940271493885 L 318.3180570602417 350.0795095264623 L 688.3179426193237 350.0795095264623 L 688.3179426193237 362.07940271493885"/>
+  <path class="GlobalId-1NZ7YSv39E_QkKjRm28c1r IfcAnnotation PredefinedType-FILLAREA natuursteen" d="M 239.31806087493896 362.07940271493885 L 289.31801319122314 362.07940271493885 L 289.31801319122314 360.07935693857166 L 239.31806087493896 360.07935693857166 L 239.31806087493896 362.07940271493885"/>
+  <path class="GlobalId-1NZ7YSv39E_QkKjRm28c1r IfcAnnotation PredefinedType-FILLAREA natuursteen" d="M 290.31803607940674 362.07940271493885 L 308.31801891326904 362.07940271493885 L 308.31801891326904 360.07935693857166 L 290.31803607940674 360.07935693857166 L 290.31803607940674 362.07940271493885"/>
+  <path class="GlobalId-0yl9CpPln1PheEkNJ37DjI IfcAnnotation PredefinedType-FILLAREA gewapend_beton_prefab" d="M 188.31803798675537 105.07962396738026 L 308.31801891326904 105.07962396738026 L 308.31801891326904 95.0795858204076 L 188.31803798675537 95.0795858204076 L 188.31803798675537 105.07962396738026"/>
+  <path class="GlobalId-0yl9CpPln1PheEkNJ37DjI IfcAnnotation PredefinedType-FILLAREA gewapend_beton_prefab" d="M 688.3179426193237 105.07962396738026 L 318.3180570602417 105.07962396738026 L 318.3180570602417 95.0795858204076 L 688.3179426193237 95.0795858204076 L 688.3179426193237 105.07962396738026"/>
+  <path class="GlobalId-1Rvyr3YNT0J9uDlcs9lLae IfcAnnotation PredefinedType-FILLAREA naaldhout" d="M 301.61802768707275 142.47967889902088 L 308.31801891326904 142.47967889902088 L 308.31801891326904 131.07964685556385 L 301.61802768707275 131.07964685556385 L 301.61802768707275 142.47967889902088"/>
+  <path class="GlobalId-1Rvyr3YNT0J9uDlcs9lLae IfcAnnotation PredefinedType-FILLAREA naaldhout" d="M 188.31803798675537 142.47967889902088 L 195.01802921295166 142.47967889902088 L 195.01802921295166 131.07964685556385 L 188.31803798675537 131.07964685556385 L 188.31803798675537 142.47967889902088"/>
+  <path class="GlobalId-1Rvyr3YNT0J9uDlcs9lLae IfcAnnotation PredefinedType-FILLAREA naaldhout" d="M 688.3179426193237 142.47967889902088 L 318.3180570602417 142.47967889902088 L 318.3180570602417 131.07964685556385 L 688.3179426193237 131.07964685556385 L 688.3179426193237 142.47967889902088"/>
+  <path class="GlobalId-0irUEGHhvDw81279pljB9B IfcAnnotation PredefinedType-FILLAREA loofhout" d="M 188.31803798675537 158.8796346485326 L 195.01802921295166 158.8796346485326 L 195.01802921295166 147.47960260507557 L 188.31803798675537 147.47960260507557 L 188.31803798675537 158.8796346485326"/>
+  <path class="GlobalId-0irUEGHhvDw81279pljB9B IfcAnnotation PredefinedType-FILLAREA loofhout" d="M 688.3179426193237 158.8796346485326 L 318.3180570602417 158.8796346485326 L 318.3180570602417 147.47960260507557 L 688.3179426193237 147.47960260507557 L 688.3179426193237 158.8796346485326"/>
+  <path class="GlobalId-0irUEGHhvDw81279pljB9B IfcAnnotation PredefinedType-FILLAREA loofhout" d="M 301.61802768707275 158.8796346485326 L 308.31801891326904 158.8796346485326 L 308.31801891326904 147.47960260507557 L 301.61802768707275 147.47960260507557 L 301.61802768707275 158.8796346485326"/>
   <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="end" transform="translate(150.54676818847656, 260.0795593261719) rotate(-0.0)">
     <tspan class="GlobalId-0Z2TE26GPCZhogUu4O1IHv IfcAnnotation PredefinedType-TEXT header" dy="0em" x="0" y="0">nietdragendelichtescheidingswanden</tspan>
   </text>
@@ -5353,5 +5392,20 @@ text.DIMENSION, tspan.DIMENSION { /* 2.5mm */ font-size: 4.13px; }
   </text>
   <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="end" transform="translate(150.54676818847656, 45.079776763916016) rotate(-0.0)">
     <tspan class="GlobalId-08baGSUor5w91MOb49x51v IfcAnnotation PredefinedType-TEXT header" dy="0em" x="0" y="0">metselwerkbaksteen</tspan>
+  </text>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="end" transform="translate(150.54676818847656, 345.07958984375) rotate(-0.0)">
+    <tspan class="GlobalId-2YLXjxpAjB8B0CPDjOm4xG IfcAnnotation PredefinedType-TEXT header" dy="0em" x="0" y="0">samengesteldewandvloerafwerking</tspan>
+  </text>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="end" transform="translate(150.54676818847656, 60.079734802246094) rotate(-0.0)">
+    <tspan class="GlobalId-3wyI98$lXA0fdHVjpai6fy IfcAnnotation PredefinedType-TEXT header" dy="0em" x="0" y="0">isolatie</tspan>
+  </text>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="end" transform="translate(150.54676818847656, 275.0794982910156) rotate(-0.0)">
+    <tspan class="GlobalId-1Uos8igDD7xPaORI9DKsIo IfcAnnotation PredefinedType-TEXT header" dy="0em" x="0" y="0">lood</tspan>
+  </text>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="end" transform="translate(150.54676818847656, 142.47967529296875) rotate(-0.0)">
+    <tspan class="GlobalId-3EyuIDAqH6ZA3rgw0oTd9u IfcAnnotation PredefinedType-TEXT header" dy="0em" x="0" y="0">naaldhout</tspan>
+  </text>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="end" transform="translate(150.54676818847656, 75.07969665527344) rotate(-0.0)">
+    <tspan class="GlobalId-1M7_BULlH3quNBfprtdqBn IfcAnnotation PredefinedType-TEXT header" dy="0em" x="0" y="0">sierbeton</tspan>
   </text>
 </svg>

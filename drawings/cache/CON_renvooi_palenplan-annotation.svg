@@ -110,6 +110,9 @@
   <line class="GlobalId-1higrhPaT1AA45MVGyM61F IfcAnnotation PredefinedType-LINEWORK dashed" x1="141.9857177734375" x2="158.98568725585938" y1="65.60566711425781" y2="65.60566711425781"/>
   <line class="GlobalId-1higrhPaT1AA45MVGyM61F IfcAnnotation PredefinedType-LINEWORK dashed" x1="141.9857177734375" x2="158.98568725585938" y1="74.60564422607422" y2="74.60564422607422"/>
   <line class="GlobalId-1higrhPaT1AA45MVGyM61F IfcAnnotation PredefinedType-LINEWORK dashed" x1="212.1357421875" x2="124.9857406616211" y1="93.10566711425781" y2="93.10566711425781"/>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(22.93572425842285, 134.05038452148438) rotate(-0.0)">
+    <tspan class="GlobalId-3twDcerAb8oeqBls80V9gF IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">Symbool</tspan>
+  </text>
   <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(58.91072082519531, 163.05038452148438) rotate(-0.0)">
     <tspan class="GlobalId-2f0M6_wzf6kRgKggGgcb4b IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">44</tspan>
   </text>
@@ -118,9 +121,6 @@
   </text>
   <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(100.48577117919922, 134.05038452148438) rotate(-0.0)">
     <tspan class="GlobalId-1PuhxbHQv3DuAytHz6U51l IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">O.K. BALK</tspan>
-  </text>
-  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(44.53572082519531, 144.30039978027344) rotate(-0.0)">
-    <tspan class="GlobalId-1DWb6TyO13aQS4icZZje6n IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">220</tspan>
   </text>
   <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(166.93576049804688, 156.80039978027344) rotate(-0.0)">
     <tspan class="GlobalId-3AxOGIGufF$xcmHPv8WSQl IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">-1000</tspan>
@@ -147,14 +147,26 @@
   <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(58.91072082519531, 156.80039978027344) rotate(-0.0)">
     <tspan class="GlobalId-1olHTVB4D66g1xVw4lfmYs IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">28</tspan>
   </text>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(80.58575439453125, 134.05038452148438) rotate(-0.0)">
+    <tspan class="GlobalId-3dI3JinkX43w2gMA9cxp8d IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">INHEINIVEAU</tspan>
+  </text>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(66.58573913574219, 134.05038452148438) rotate(-0.0)">
+    <tspan class="GlobalId-3VnfFPP55BXuyXZHIcKo4f IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">LENGTE</tspan>
+  </text>
   <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(58.91072082519531, 144.30039978027344) rotate(-0.0)">
     <tspan class="GlobalId-3cdxvvxDXBfPJO2e2YZDDz IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">16</tspan>
+  </text>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(107.63577270507812, 144.30039978027344) rotate(-0.0)">
+    <tspan class="GlobalId-3AhwrZ$XfA2AH9JoKGZqk4 IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">-1020</tspan>
   </text>
   <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(156.435791015625, 134.05038452148438) rotate(-0.0)">
     <tspan class="GlobalId-0XTjmdebX15wubfsT$ClB5 IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">AFHAKHOOGTE</tspan>
   </text>
   <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(89.2857437133789, 156.80039978027344) rotate(-0.0)">
     <tspan class="GlobalId-0MpBd_4Fj3IQRBFbc98vYM IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">-19,00</tspan>
+  </text>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(135.58580017089844, 144.30039978027344) rotate(-0.0)">
+    <tspan class="GlobalId-2JaBOMMQ9AMvYv_7u4K$xC IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">-670</tspan>
   </text>
   <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(180.2857208251953, 92.60567474365234) rotate(-0.0)">
     <tspan class="GlobalId-2ITmWZVn5BLvnwitCYXFn8 IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">puntniveau</tspan>
@@ -165,20 +177,14 @@
   <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(89.2857437133789, 128.05039978027344) rotate(-0.0)">
     <tspan class="GlobalId-1eLBsNnH51tBqKX0cunbac IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">[m tov NAP]</tspan>
   </text>
-  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(53.735740661621094, 134.05038452148438) rotate(-0.0)">
-    <tspan class="GlobalId-1iWA$xO0r7Pgx3qs2OXKdn IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">AANTAL</tspan>
-  </text>
   <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(29.771089553833008, 108.211181640625) rotate(-0.0)">
     <tspan class="GlobalId-3khcptwWv7uAZqSW7kD2YJ IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">-Wapening volgens opgaaf fabrikant</tspan>
   </text>
   <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(135.58580017089844, 156.80039978027344) rotate(-0.0)">
     <tspan class="GlobalId-3CYXbFSMX6MAb4Pic97tWp IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">-670</tspan>
   </text>
-  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(72.38575744628906, 144.30039978027344) rotate(-0.0)">
-    <tspan class="GlobalId-0hMAV9DiHFbvKeFYH7TrlP IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">22,33</tspan>
-  </text>
-  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(22.93572425842285, 134.05038452148438) rotate(-0.0)">
-    <tspan class="GlobalId-3twDcerAb8oeqBls80V9gF IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">Symbool</tspan>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(44.53572082519531, 144.30039978027344) rotate(-0.0)">
+    <tspan class="GlobalId-1DWb6TyO13aQS4icZZje6n IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">220</tspan>
   </text>
   <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(89.2857437133789, 144.30039978027344) rotate(-0.0)">
     <tspan class="GlobalId-3HOjymUl12AgrLujU61$rg IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">-21,00</tspan>
@@ -204,26 +210,17 @@
   <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(135.58580017089844, 128.05039978027344) rotate(-0.0)">
     <tspan class="GlobalId-30t0_U9VX8yPDrYRHLK5ys IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">[mm tov PEIL]</tspan>
   </text>
-  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(80.58575439453125, 134.05038452148438) rotate(-0.0)">
-    <tspan class="GlobalId-3dI3JinkX43w2gMA9cxp8d IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">INHEINIVEAU</tspan>
-  </text>
-  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(66.58573913574219, 134.05038452148438) rotate(-0.0)">
-    <tspan class="GlobalId-3VnfFPP55BXuyXZHIcKo4f IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">LENGTE</tspan>
-  </text>
-  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(107.63577270507812, 144.30039978027344) rotate(-0.0)">
-    <tspan class="GlobalId-3AhwrZ$XfA2AH9JoKGZqk4 IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">-1020</tspan>
-  </text>
   <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(72.38575744628906, 156.80039978027344) rotate(-0.0)">
     <tspan class="GlobalId-2vbaP4CtD26Bk6ZGVAuEzl IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">20,33</tspan>
-  </text>
-  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(135.58580017089844, 144.30039978027344) rotate(-0.0)">
-    <tspan class="GlobalId-2JaBOMMQ9AMvYv_7u4K$xC IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">-670</tspan>
   </text>
   <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(22.93572425842285, 44.584659576416016) rotate(-0.0)">
     <tspan class="GlobalId-1JDmRv0Ij3_BfSDsyZ486K IfcAnnotation PredefinedType-TEXT small bold" dy="0em" x="0" y="0">REKENGEGEVENS</tspan>
   </text>
   <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(107.63577270507812, 128.05039978027344) rotate(-0.0)">
     <tspan class="GlobalId-0LMeXsN4DACvUbACHlvhxm IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">[mm tov PEIL]</tspan>
+  </text>
+  <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(53.735740661621094, 134.05038452148438) rotate(-0.0)">
+    <tspan class="GlobalId-1iWA$xO0r7Pgx3qs2OXKdn IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">AANTAL</tspan>
   </text>
   <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(72.38575744628906, 128.05039978027344) rotate(-0.0)">
     <tspan class="GlobalId-3iH$Pyp9jE7x1r7hthKvgZ IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">[m]</tspan>
@@ -233,6 +230,9 @@
   </text>
   <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(44.53572082519531, 156.80039978027344) rotate(-0.0)">
     <tspan class="GlobalId-121dVaL7j9GRarY7Bc19vP IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">220</tspan>
+  </text>
+  <text dominant-baseline="middle" style="font-size: 0;" text-anchor="middle" transform="translate(72.38575744628906, 144.30039978027344) rotate(-0.0)">
+    <tspan class="GlobalId-0hMAV9DiHFbvKeFYH7TrlP IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">22,33</tspan>
   </text>
   <text dominant-baseline="baseline" style="font-size: 0;" text-anchor="start" transform="translate(180.2857208251953, 46.605648040771484) rotate(-0.0)">
     <tspan class="GlobalId-0WV9g9$oL1_Q6ysaHIdQQq IfcAnnotation PredefinedType-TEXT small" dy="0em" x="0" y="0">onderkant fundering</tspan>

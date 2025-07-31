@@ -98,6 +98,12 @@
 	</marker>
 	<marker id="section-level-marker" markerHeight="11" markerWidth="90" refX="20" refY="10" orient="auto-start-reverse">
 	</marker>
+    <marker id="arrow-marker-start" markerHeight="10" markerWidth="5" orient="auto" refX="0" refY="5">
+        <path d="M0 5 5 12ZL5 0Z" class="annotation stair" style="stroke-width:1" />
+    </marker>
+	<marker id="arrow-marker-end" markerHeight="10" markerWidth="5" orient="auto" refX="5" refY="5">
+        <path d="M5 5 0 10ZL0 0Z" class="annotation stair" style="stroke-width:1" />
+    </marker>
     <marker id="breakline-marker" markerHeight="20" markerWidth="15" refX="7.5" refY="10" orient="auto">
         <g>
             <path d="M 0 10 L 5 20 L 7.5 10" class="annotation" style="stroke-width:1; fill: white;" />
